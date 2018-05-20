@@ -1,0 +1,20 @@
+{
+    "name": "devgowa/lumen-serve",
+    "description": "A command php artisan serve for lumen framework",
+    "type": "library",
+    "require": {
+        "symfony/console": "^4.0",
+        "symfony/process": "^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Nur Wahid",
+            "email": "codeofdeadly@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":{
+        "classmap":["src/"]
+    }
+}
