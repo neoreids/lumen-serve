@@ -3,6 +3,7 @@
     "description": "A command php artisan serve for lumen framework",
     "type": "library",
     "require": {
+        "php":"^7.0",
         "symfony/console": "^4.0",
         "symfony/process": "^4.0"
     },
