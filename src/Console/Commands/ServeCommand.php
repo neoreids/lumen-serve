@@ -1,5 +1,5 @@
 <?php
-namespace Devgowa\LumenServe\Command;
+namespace Devgowa\LumenServe\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\ProcessUtils;
@@ -51,7 +51,7 @@ class ServeCommand extends Command
             ProcessUtils::escapeArgument((new PhpExecutableFinder)->find(false)),
             $this->host(),
             $this->port(),
-            ProcessUtils::escapeArgument(__DIR__.'/server.php')
+            ProcessUtils::escapeArgument(__DIR__.'/../../server.php')
         );
     }
 
