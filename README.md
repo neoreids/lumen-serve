@@ -3,7 +3,7 @@ Command php artisan serve for lumen framework
 
 # Installation
 1. `composer require devgowa/lumen-serve`
-2. Add `\Devgowa\LumenServe\Command\ServeCommand::class` to `$commands` array in `app/Console/Kernel.php`
+2. Register service provider in `boostrap\app.php` with `$app->register(Devgowa\LumenServe\CommandServeServiceProvider::class)`
 3. Run `php artisan serve`
 
 # Disclaimer
